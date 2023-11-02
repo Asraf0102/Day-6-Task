@@ -6,12 +6,13 @@ class Uber {
     this.CostPerMinute=CostPerMinute;
     this.BookingFee=BookingFee;
     this.time=time;
-    this.mile=time;
+    this.mile=mile;
     }
-    totalPrice(time=this.time , mile=this.mile){
-       console.log([this.BaseFare+this.BookingFee+
-        this.CostPerMinute+this.time+this.mile])
+    totalPrice(){
+       console.log(this.BaseFare+this.BookingFee+
+        this.CostPerMile*this.time+this.mile)
     }
 }
-let bike = new Uber();
-bike.totalPrice();
+let bike = new Uber(); 
+bike.totalPrice()
+console.log(bike)
